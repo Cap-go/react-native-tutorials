@@ -4,8 +4,8 @@ import { existsSync, mkdirSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { actions } from './action.mjs'
 
-const auth = process.env.BEARER_TOKEN
-if (!auth) throw new Error(`process.env.BEARER_TOKEN not found.`)
+const auth = process.env.PERSONAL_ACCESS_TOKEN
+if (!auth) throw new Error(`process.env.PERSONAL_ACCESS_TOKEN not found.`)
 
 const appDir = process.cwd()
 const octokit = new Octokit({ auth })
