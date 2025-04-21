@@ -1,0 +1,54 @@
+name: Fetch and Create READMEs
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 1 * * 0' # Run at 1AM UTC every Sunday
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    name: Fetch and Create READMEs
+    steps:
+      - name: Install Git LFS
+        run: sudo apt-get update && sudo apt-get install git-lfs && git lfs install
+
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+          token: ${{ secrets.PAT_TOKEN }}
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: latest
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Create READMEs
+        run: node scripts/write_readme.mjs
+        env:
+          BEARER_TOKEN: ${{ secrets.BEARER_TOKEN }}
+
+      - name: Commit generated files
+        env:
+          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
+        run: |
+          git config --global user.name "Martin DONADIEU"
+          git config --global user.email "martindonadieu@gmail.com"
+          git lfs track "loadedVectorStore/*.json"
+          git lfs track "loadedVectorStore/*.index"
+          git add .gitattributes
+          git add loadedVectorStore/*.json loadedVectorStore/*.index
+          git add -A
+          git commit -m "Commit generated files"
+          git push origin main -f
+        working-directory: ./

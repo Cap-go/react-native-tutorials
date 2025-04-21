@@ -1,0 +1,35 @@
+---
+import '@/css/global.css'
+import SEO from '@/components/SEO.astro'
+import Header from '@/components/Header.vue'
+import Footer from '@/components/Footer.vue'
+
+const { content } = Astro.props
+const isLocalhost = Astro.url.origin.includes('localhost:')
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <SEO {...content} />
+  </head>
+  <body>
+    <div class="overflow-x-hidden bg-gray-900 text-white">
+      <Header client:load />
+      <slot />
+      <Footer client:load />
+    </div>
+    {
+      !isLocalhost && (
+        <script
+          is:inline
+          async="true"
+          defer="true"
+          data-domain="capacitor-tutorial.com"
+          src="https://pls.digitalshift-ee.workers.dev/js/script.js"
+          data-api="https://pls.digitalshift-ee.workers.dev/api/event"
+        />
+      )
+    }
+  </body>
+</html>
