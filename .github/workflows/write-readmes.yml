@@ -44,8 +44,8 @@ jobs:
         run: |
           git config --global user.name "Martin DONADIEU"
           git config --global user.email "martindonadieu@gmail.com"
-          git lfs track "loadedVectorStore/*.json"
-          git lfs track "loadedVectorStore/*.index"
+          git lfs track "loadedVectorStore/*.json" || true
+          git lfs track "loadedVectorStore/*.index" || true
           git add .gitattributes
           git add loadedVectorStore/*.json loadedVectorStore/*.index
           git add -A
