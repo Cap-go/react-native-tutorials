@@ -36,7 +36,7 @@ jobs:
       - name: Generate tutorials
         run: node scripts/generate_tutorials.mjs
         env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_API_TOKEN: ${{ secrets.OPENAI_API_TOKEN }}
 
       - name: Commit generated files
         env:
