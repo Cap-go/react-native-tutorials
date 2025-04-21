@@ -91,11 +91,7 @@ const endLimit = parseInt(process.argv[3]) || actions.length
 const getSlug = (href) => href.substring(href.lastIndexOf('/') + 1).toLowerCase()
 
 const inputQuery = (item) =>
-  `Generate a markdown tutorial of using ${
-    item.name
-  } package, also add a frontmatter with values making sure that they are in double quotes (and the content in them does not contain double quotes) to the same file containing title for the blog, description as the summary of what will be in the blog, created_at as the date of this answer, published boolean value as true and slug value equal to ${getSlug(
-    item.href,
-  )} and make sure that there is no commas at the end of each key value pair in the frontmatter`
+  `Generate a markdown tutorial of using ${item.name} package, also add a frontmatter with values making sure that they are in double quotes (and the content in them does not contain double quotes) to the same file containing title for the blog, description as the summary of what will be in the blog, created_at as the date of this answer, published boolean value as true and make sure that there is no commas at the end of each key value pair in the frontmatter.`
 
 async function spinTutorials(list) {
   const gap = 5
