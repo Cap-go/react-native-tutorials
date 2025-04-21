@@ -9,8 +9,8 @@ function getRightKey(branch: string, keyname: 'base_domain'): string {
 }
 
 const brand = 'Capgo'
-const blogTitle = `${brand} | Capacitor Blog`
-const blogDescription = 'The best articles to enhance your Capacitor app. Do more with Capacitor and Capgo. Learn how to build a modern app with Capacitor.'
+const blogTitle = `${brand} | React Native Blog`
+const blogDescription = 'The best articles to enhance your React Native app. Do more with React Native and Capgo. Learn how to build a modern app with React Native.'
 
 function getUrl(branch = ''): string {
   if (branch === 'local') return `http://${getRightKey(branch, 'base_domain')}`
