@@ -19,6 +19,14 @@ async function validateMarkdownFiles() {
       const filePath = path.join(tutorialsDir, file)
       try {
         const content = await fs.readFile(filePath, 'utf-8')
+        
+        // Auto-delete files that do not contain '---'
+        if (!content.includes('---')) {
+          await fs.unlink(filePath)
+          console.log(`Deleted file (missing '---'): ${file}`)
+          continue
+        }
+
         const parsed = matter(content)
         const requiredFields = ['title']
         const missingFields = requiredFields.filter((field) => !parsed.data[field])

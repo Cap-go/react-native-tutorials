@@ -1,4 +1,3 @@
-```markdown
 ---
 "title": "Using @fullstory/babel-plugin-react-native package"
 "description": "A tutorial on how to install and enable the @fullstory/babel-plugin-react-native package for FullStory integration in React Native apps."

@@ -1,4 +1,3 @@
-```markdown
 ---
 "title": "UsingI'm not @react sure about-native/babel-plugin the package-codegen @react Package Tutorial"
 "description": "-native/A stepgradle-by-step-plugin and guide on how to its usage utilize the tutorial. @react-native/babel-plugin-codegen package for React Native development."

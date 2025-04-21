@@ -1,7 +1,7 @@
 ---
-"title": "Using vite-plugin-react-native-web Package Tutorial",
-"description": "This tutorial will guide you through setting up and using the vite-plugin-react-native-web package in your project. It covers installation, usage, and helpful information for utilizing React Native Web support in Vite.",
-"created_at": "2022-01-24",
+"title": "Using vite-plugin-react-native-web Package Tutorial"
+"description": "This tutorial will guide you through setting up and using the vite-plugin-react-native-web package in your project. It covers installation, usage, and helpful information for utilizing React Native Web support in Vite."
+"created_at": "2022-01-24"
 "published": true
 ---
 

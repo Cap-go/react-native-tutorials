@@ -1,8 +1,7 @@
-```markdown
 ---
-"title": "Using rn-notification-setting Package Tutorial",
-"description": "Learn how to use the rn-notification-setting package in your React Native project to customize notification settings, check status, and more.",
-"created_at": "October 28, 2021",
+"title": "Using rn-notification-setting Package Tutorial"
+"description": "Learn how to use the rn-notification-setting package in your React Native project to customize notification settings, check status, and more."
+"created_at": "October 28, 2021"
 "published": true
 ---
 
