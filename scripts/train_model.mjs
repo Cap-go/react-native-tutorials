@@ -10,17 +10,12 @@ import { exit } from 'node:process'
 import { actions } from './action.mjs'
 
 const appDir = process.cwd()
+const directory = join(appDir, 'loadedVectorStore')
+const docStoreJSON = join(directory, 'docstore.json')
 
 async function loadVectorStore() {
-  const directory = join(appDir, 'loadedVectorStore')
-  const docStoreJSON = join(appDir, 'loadedVectorStore', 'docstore.json')
   if (existsSync(docStoreJSON)) return await FaissStore.load(directory, new OpenAIEmbeddings())
   return await FaissStore.fromDocuments([new Document({ pageContent: 'Hey' })], new OpenAIEmbeddings())
-}
-
-async function saveVectorStore(vectorStore) {
-  const directory = join(appDir, 'loadedVectorStore')
-  await vectorStore.save(directory)
 }
 
 async function train(list) {
@@ -54,7 +49,7 @@ async function train(list) {
     console.log('Training in progress...')
     await Promise.all(list.map((element) => executeAsyncOperation(element)))
     console.log('Saving the vectorStore...')
-    await saveVectorStore(vectorStore)
+    await vectorStore.save(directory)
     console.log('Saved!')
     console.log('Training done!')
     exit()
