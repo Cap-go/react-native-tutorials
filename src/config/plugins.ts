@@ -15,8 +15,6 @@ export interface Plugin extends Action {
   datePublished?: string
   dateModified?: string
   tutorial?: string
-  page_title?: string
-  page_description?: string
 }
 export const actions = [
   {
@@ -103,5 +101,12 @@ export const actions = [
     title: 'keen-slider',
     description: 'The HTML touch slider carousel with the most native feeling you will get.',
     author: 'rcbyr',
+  },
+  {
+    name: 'rn-pagseguro-plugin',
+    href: 'git+https://github.com/matheuscrestanifernandes/rn-pagseguro-plugin.git',
+    title: 'rn-pagseguro-plugin',
+    description: 'react native plugin for connect to pagseguro based on PlugPagServiceWrapper',
+    author: 'matheuscrestanifernandes',
   },
 ]

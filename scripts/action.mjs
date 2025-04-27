@@ -84,4 +84,11 @@ export const actions = [
     description: 'The HTML touch slider carousel with the most native feeling you will get.',
     author: 'rcbyr',
   },
+  {
+    name: 'rn-pagseguro-plugin',
+    href: 'git+https://github.com/matheuscrestanifernandes/rn-pagseguro-plugin.git',
+    title: 'rn-pagseguro-plugin',
+    description: 'react native plugin for connect to pagseguro based on PlugPagServiceWrapper',
+    author: 'matheuscrestanifernandes',
+  },
 ]
