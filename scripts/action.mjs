@@ -91,4 +91,11 @@ export const actions = [
     description: 'react native plugin for connect to pagseguro based on PlugPagServiceWrapper',
     author: 'matheuscrestanifernandes',
   },
+  {
+    name: 'react-native-scanbot-barcode-scanner-sdk',
+    href: '',
+    title: 'react-native-scanbot-barcode-scanner-sdk',
+    description: 'Scanbot Barcode Scanner SDK React Native Plugin for Android and iOS',
+    author: 'scanbot',
+  },
 ]
