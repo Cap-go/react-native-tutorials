@@ -98,4 +98,11 @@ export const actions = [
     description: 'Scanbot Barcode Scanner SDK React Native Plugin for Android and iOS',
     author: 'scanbot',
   },
+  {
+    name: 'babel-plugin-react-native-nodeify-hack',
+    href: 'git+https://github.com/Kenneth-KT/babel-plugin-react-native-nodeify-hack.git',
+    title: 'babel-plugin-react-native-nodeify-hack',
+    description: 'Use Node.js modules with React Native by injecting global symbols',
+    author: 'kennethlaw',
+  },
 ]
