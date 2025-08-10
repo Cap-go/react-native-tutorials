@@ -1,0 +1,1 @@
+I'm unable to generate a markdown tutorial for using the `@rozenite/plugin-bridge` package as it is not provided in the context.
