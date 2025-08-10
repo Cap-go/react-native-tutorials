@@ -105,4 +105,19 @@ export const actions = [
     description: 'Use Node.js modules with React Native by injecting global symbols',
     author: 'kennethlaw',
   },
+  {
+    name: '@rozenite/plugin-bridge',
+    href: 'git+https://github.com/callstackincubator/rozenite.git',
+    title: 'plugin-bridge',
+    description: 'Communication layer for React Native DevTools plugins across React Native and web environments',
+    author: 'aitwar',
+  },
+  {
+    name: '@rozenite/runtime',
+    href: 'git+https://github.com/callstackincubator/rozenite.git',
+    title: 'runtime',
+    description: 'Rozenite runtime for React Native DevTools.',
+    author: 'aitwar',
+  },
+  { name: '@rozenite/metro', href: 'git+https://github.com/callstackincubator/rozenite.git', title: 'metro', description: 'Metro bundler plugin for Rozenite.', author: 'aitwar' },
 ]
