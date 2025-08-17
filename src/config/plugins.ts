@@ -138,4 +138,5 @@ export const actions = [
     author: 'aitwar',
   },
   { name: '@rozenite/metro', href: 'git+https://github.com/callstackincubator/rozenite.git', title: 'metro', description: 'Metro bundler plugin for Rozenite.', author: 'aitwar' },
+  { name: '@rozenite/middleware', href: 'git+https://github.com/callstackincubator/rozenite.git', title: 'middleware', description: 'Middleware for Rozenite.', author: 'aitwar' },
 ]
