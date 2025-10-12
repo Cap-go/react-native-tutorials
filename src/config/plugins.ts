@@ -140,4 +140,11 @@ export const actions = [
   { name: '@rozenite/metro', href: 'git+https://github.com/callstackincubator/rozenite.git', title: 'metro', description: 'Metro bundler plugin for Rozenite.', author: 'aitwar' },
   { name: '@rozenite/middleware', href: 'git+https://github.com/callstackincubator/rozenite.git', title: 'middleware', description: 'Middleware for Rozenite.', author: 'aitwar' },
   { name: '@coralogix/react-native-plugin', href: '', title: 'react-native-plugin', description: 'Official Coralogix React Native plugin', author: 'coralogixnpm' },
+  {
+    name: 'rozenite',
+    href: 'git+https://github.com/callstackincubator/rozenite.git',
+    title: 'rozenite',
+    description: 'Command-line interface for creating and managing React Native DevTools plugins',
+    author: 'aitwar',
+  },
 ]
