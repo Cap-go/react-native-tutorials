@@ -129,4 +129,11 @@ export const actions = [
     description: 'Command-line interface for creating and managing React Native DevTools plugins',
     author: 'aitwar',
   },
+  {
+    name: '@rozenite/vite-plugin',
+    href: 'git+https://github.com/callstackincubator/rozenite.git',
+    title: 'vite-plugin',
+    description: 'Vite plugin for developing React Native DevTools plugins with hot reload and development tools',
+    author: 'aitwar',
+  },
 ]
