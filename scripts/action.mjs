@@ -136,4 +136,11 @@ export const actions = [
     description: 'Vite plugin for developing React Native DevTools plugins with hot reload and development tools',
     author: 'aitwar',
   },
+  {
+    name: '@datadog/mobile-react-native-babel-plugin',
+    href: 'https://github.com/DataDog/dd-sdk-reactnative',
+    title: 'mobile-react-native-babel-plugin',
+    description: "A Babel plugin that enhances Datadog's React Native SDK by automatically enriching React components with contextual metadata.",
+    author: 'datadog',
+  },
 ]
