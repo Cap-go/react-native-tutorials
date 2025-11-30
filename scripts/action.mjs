@@ -143,4 +143,11 @@ export const actions = [
     description: "A Babel plugin that enhances Datadog's React Native SDK by automatically enriching React components with contextual metadata.",
     author: 'datadog',
   },
+  {
+    name: '@rozenite/repack',
+    href: 'git+https://github.com/callstackincubator/rozenite.git',
+    title: 'repack',
+    description: 'Re.Pack bundler plugin for Rozenite.',
+    author: 'aitwar',
+  },
 ]
