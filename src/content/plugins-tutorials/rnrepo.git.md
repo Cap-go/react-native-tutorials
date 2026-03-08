@@ -1,0 +1,1 @@
+I'm sorry, but I'm unable to generate a markdown tutorial with frontmatter values for the @rnrepo/expo-config-plugin package.
