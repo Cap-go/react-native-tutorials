@@ -150,4 +150,11 @@ export const actions = [
     description: 'Re.Pack bundler plugin for Rozenite.',
     author: 'aitwar',
   },
+  {
+    name: '@rnrepo/expo-config-plugin',
+    href: 'git+https://github.com/software-mansion/rnrepo.git',
+    title: 'expo-config-plugin',
+    description: 'Plugin for configuring RNRepo prebuilt packages in Expo projects',
+    author: 'swm-bot',
+  },
 ]
