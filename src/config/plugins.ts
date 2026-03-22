@@ -175,4 +175,18 @@ export const actions = [
     description: 'Plugin for configuring RNRepo prebuilt packages in Expo projects',
     author: 'swm-bot',
   },
+  {
+    name: 'eslint-plugin-react-native-normalized',
+    href: 'git+https://github.com/JonnyBurger/eslint-plugin-react-native-normalized.git',
+    title: 'eslint-plugin-react-native-normalized',
+    description: 'ESLint rule for forbidding use of React Native components when a version of react-native-normalized is available',
+    author: 'jonny',
+  },
+  {
+    name: '@rnrepo/build-tools',
+    href: 'git+https://github.com/software-mansion/rnrepo.git',
+    title: 'build-tools',
+    description: 'RNRepo plugin for handling prebuilt binaries of iOS and Android libraries',
+    author: 'swm-bot',
+  },
 ]
