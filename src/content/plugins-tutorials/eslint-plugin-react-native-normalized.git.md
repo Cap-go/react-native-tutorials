@@ -1,0 +1,1 @@
+I don't have information about the `eslint-plugin-react-native-normalized` package or how to use it in a markdown tutorial.
